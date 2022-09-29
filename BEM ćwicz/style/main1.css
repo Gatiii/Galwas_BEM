@@ -1,0 +1,286 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+.container__card,
+.container__sbox,
+details,
+figcaption,
+figure,
+.container__last,
+.container__box,
+hgroup,
+menu,
+.container__menu,
+.container__smenu,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+.container__item-list {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+-------- end reset ----------
+*/
+.container__card {
+  box-shadow: 0 0 5px #aaa;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+}
+
+.container__image {
+  width: 100%;
+}
+
+.container__boxx {
+  padding: 1rem;
+}
+
+.container__link,
+.container__slink,
+.container__card-read_more
+{
+  display: block;
+  padding: 0.8rem;
+  text-align: center;
+  color: #555;
+  box-shadow: 0 0 3px #ccc;
+}
+
+.container__link:hover,
+.container__slink:hover,
+.container__card-read_more:hover 
+{
+  background-color: #eee;
+}
+
+.container {
+  display: flex;
+  gap: 2vh;
+  flex-direction: column;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.container__box {
+  grid-area: 1/1/2/-1;
+  display: grid;
+  gap: 2vh 4rem;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__big {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.container__sbox {
+  grid-area: 1/-2/3/-1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__sitem {
+  margin-bottom: 4px;
+}
+
+.container__slink {
+  border: none;
+}
+
+.container__tbox {
+  display: grid;
+  gap: 2vw;
+}
+
+.container__item-list {
+  display: flex;
+}
+
+.container__item {
+  flex-basis: 15%;
+  flex-grow: 1;
+}
+.container__item:nth-of-type(1) .container__link {
+  background-color: #f00;
+}
+.container__card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+.container__sbig {
+  font-size: 1.8rem;
+  margin: 1.5rem 0 0.5rem;
+  text-align: center;
+}
+
+.container__sign-text {
+  padding: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.container__card-read_more {
+  width: auto;
+  margin: auto;
+  padding: 0.3rem 0.5rem;
+  transition-duration: 0.4s;
+}
+
+.container__card-read_more:hover {
+  box-shadow: 1px 1px 7px #ccc;
+  padding: 0.3rem 2rem;
+  background-color: #fff;
+}
+
+.container__card-read_more:active {
+  box-shadow: inset 2px 2px 2px 1px #ccc;
+}
+
+.container__sign {
+  padding: 0.5rem 1rem 1rem;
+  text-align: right;
+}
+
+.container__last {
+  width: 70%;
+  margin: auto;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+body {
+  margin: 2.5rem;
+  font-family: sans-serif;
+  color: #555;
+}
+
+body * {
+  box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */
